@@ -1,0 +1,2 @@
+print("Part1:",sum(ord(x)+(1-ord('a') if ord(x)>=ord('a') else 27-ord('A')) for x in map(lambda l: list(set(l[:len(l)//2]).intersection(set(l[len(l)//2:])))[0],open("Day 3.txt","r").read().split())    ))
+print("Part2:",sum(ord(x)+(1-ord('a') if ord(x)>=ord('a') else 27-ord('A')) for x in [list(set(s).intersection(set(q),set(r)))[0] for (s,q,r) in zip(*[iter(open("Day 3.txt","r").read().split())]*3)] ))
