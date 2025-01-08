@@ -26,7 +26,9 @@ def part1():
 
 part1()
 
-
+# Obviously, this is the most naive, dumbest way to go about this problem
+# But lately, my philosophy has been to not overoptimize unimportant things
+# This still runs quickly enough.
 def part2():
     area = open("Day6.txt").read().split("\n")
     height, width = len(area), len(area[0])
