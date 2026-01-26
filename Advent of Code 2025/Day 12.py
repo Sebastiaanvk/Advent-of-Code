@@ -1,3 +1,12 @@
+# Bruh
+# The frustrations I felt trying to solve this ;(((
+# but yeah it's Advent of Code, The problems are sometimes made so that
+# you need an hoc solution for the specific input
+# In this case, it suffices to check the trivial ways you can be sure that a solution does or doesnt exist
+# i.e. either assume that each shape is exactly 3x3 without overlapping 
+# or assume that we can overlap perfectly and only count the total number of '#'s
+
+
 def part1():
     inp = open("Day 12.txt").read().split("\n\n")
     shapePips = []
