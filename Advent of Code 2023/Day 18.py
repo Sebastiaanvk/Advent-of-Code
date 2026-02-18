@@ -1,3 +1,14 @@
+# Explanation:
+# I use the shoelace theorem for the area
+# However, this will give the area when we take the center of the digging squares
+# What we are missing is the rest of the surrounding strip
+# This would intuitively be half of the number of squares on the exterior
+# but any inner corner misses 1/4 of a square and any outer corner misses 3/4 of a square
+# There are always four more outer corners than inner corners to make a loop.
+# and all the other inner and outer corner compensate for each other.
+# Therefore we need to add 1 to the number of exterior squares.
+
+
 def tupleAdd(t1,t2):
     return tuple(x+y for x,y in zip(t1,t2))
 
@@ -7,6 +18,7 @@ def tupleMult(t,a):
 
 
 def part1():
+
     with open("Day 18.txt") as f:
         moves = f.read().split('\n')
         locs = []
