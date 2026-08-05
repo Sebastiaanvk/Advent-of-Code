@@ -1,0 +1,45 @@
+    a = 12
+cpy a b
+dec b
+    b=11
+cpy a d
+    d=12
+cpy 0 a
+    a=0
+cpy b c
+    c=11
+
+inc a
+dec c
+jnz c -2
+
+dec d
+jnz d -5
+    c=0
+    d=0
+    a = 11*10= 110
+
+
+dec b
+    b = 10
+
+cpy b c
+    c = 10
+cpy c d
+    d = 10
+dec d
+inc c
+    d= 0
+    c = 11
+jnz d -2
+    d = 0
+tgl c
+cpy -16 c
+jnz 1 c
+cpy 95 c
+jnz 95 d
+inc a
+inc d
+jnz d -2
+inc c
+jnz c -5

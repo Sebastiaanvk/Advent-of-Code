@@ -1,0 +1,38 @@
+a' is de originele input
+b <- a'                    cpy a b
+b <- a'-1                    dec b
+d <- a'                    cpy a d
+a <- 0                    cpy 0 a
+
+c <- a'-1                   cpy b c
+
+(
+(
+a += 1                    inc a
+c -= 1                    dec c
+c = 0                    jnz c -2
+)
+
+a += c, c = 0
+
+                    dec d
+                    jnz d -5
+)
+a = a'*(a'-1), c=0, d=0
+
+b = a'-1                    dec b
+                    cpy b c
+                    cpy c d
+                    dec d
+                    inc c
+                    jnz d -2
+                    tgl c
+                    cpy -16 c
+                    jnz 1 c
+                    cpy 95 c
+                    jnz 95 d
+                    inc a
+                    inc d
+                    jnz d -2
+                    inc c
+                    jnz c -5
