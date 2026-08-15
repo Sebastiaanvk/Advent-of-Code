@@ -76,6 +76,10 @@ def part1():
 part1()
 
 def part2():
+    '''
+    I looked at the opcodes and figured out what the program does.
+    It sums up all the divisors of the value in register 2.    
+    '''
     inp = open("day-19.txt").read().split('\n')[:-1]
     instReg = int(inp[0].split()[1])
     lines = inp[1:]
